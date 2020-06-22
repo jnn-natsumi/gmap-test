@@ -1,24 +1,14 @@
-# README
+# GoogleMap APIの練習
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+「Rails5でGoogleMapを表示してみるまで」<br >
+https://qiita.com/tiara/items/4a1c98418917a0e74cbb<br >
 
-Things you may want to cover:
+上記の記事を見ながら、googlemapを表示させて、検索結果としてピン立てできるようにしました。<br >
 
-* Ruby version
+「方法2:gemのgeocoderを利用する」での、index.html.erbの最後のURLが誤っていたため、<br >
+「not found 404()」というエラーが発生します。<br>
 
-* System dependencies
+正しくは、下記のURLです。<br>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script><br>
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+「（誤）・・・api/&/js・・・」となっている。
